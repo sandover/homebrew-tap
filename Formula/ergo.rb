@@ -5,21 +5,21 @@
 class Ergo < Formula
   desc "Minimal multi-agent DAG task planner built on an append-only JSONL event log"
   homepage "https://github.com/sandover/ergo"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sandover/ergo/releases/download/v0.1.1/ergo_0.1.1_darwin_amd64.tar.gz"
-      sha256 "3b908d95768e93917b3794ce8bd214e31f02d12f8326da1b58f1a8dbdbd960b3"
+      url "https://github.com/sandover/ergo/releases/download/v0.1.2/ergo_0.1.2_darwin_amd64.tar.gz"
+      sha256 "c582df781fa781e74a17e5c3226cdf9e0a7752936262bccad5b3e5397f36d296"
 
       def install
         bin.install "ergo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sandover/ergo/releases/download/v0.1.1/ergo_0.1.1_darwin_arm64.tar.gz"
-      sha256 "a7ac964c1ae540d5ed8aa960bf8145cd5e9de0bcd5f595d066c6f7031825ae07"
+      url "https://github.com/sandover/ergo/releases/download/v0.1.2/ergo_0.1.2_darwin_arm64.tar.gz"
+      sha256 "87dc6fb3ec3add36876d776e1061e7b20b51ba6815713107cae48e02e76b4768"
 
       def install
         bin.install "ergo"
@@ -29,15 +29,15 @@ class Ergo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandover/ergo/releases/download/v0.1.1/ergo_0.1.1_linux_amd64.tar.gz"
-      sha256 "c109f7e93c01043e5c153524fa9cc0ca0f85b6e73a71ee09a29cdfd9dac6f2e1"
+      url "https://github.com/sandover/ergo/releases/download/v0.1.2/ergo_0.1.2_linux_amd64.tar.gz"
+      sha256 "7549ff1b79d2a7344f676951830765cbafe2ec8f78cce6e1d0e1038b87ed60d6"
       def install
         bin.install "ergo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandover/ergo/releases/download/v0.1.1/ergo_0.1.1_linux_arm64.tar.gz"
-      sha256 "2c55a71a3faaaa03eec66366f3a26a057a1f806440333e7f774c2a01ee66aff2"
+      url "https://github.com/sandover/ergo/releases/download/v0.1.2/ergo_0.1.2_linux_arm64.tar.gz"
+      sha256 "bb01e4e3ccb66ebcf2411dd1c6cff4c8b21cf2dfa346aec1f470253f4980deb3"
       def install
         bin.install "ergo"
       end
