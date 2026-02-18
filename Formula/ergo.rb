@@ -5,21 +5,21 @@
 class Ergo < Formula
   desc "Minimal multi-agent DAG task planner built on an append-only JSONL event log"
   homepage "https://github.com/sandover/ergo"
-  version "0.10.0"
+  version "0.10.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sandover/ergo/releases/download/v0.10.0/ergo_0.10.0_darwin_amd64.tar.gz"
-      sha256 "f94a7774ca13bbc56f7ab3deb2ad03548587ca0c70828269693f3fddec6f3ab5"
+      url "https://github.com/sandover/ergo/releases/download/v0.10.1/ergo_0.10.1_darwin_amd64.tar.gz"
+      sha256 "a32b8fff9a9af50a45827185739011e24f74ca9b88512abc8b1864338c35f42b"
 
       def install
         bin.install "ergo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sandover/ergo/releases/download/v0.10.0/ergo_0.10.0_darwin_arm64.tar.gz"
-      sha256 "9675c90dba46c5c9056b9b72809edd3a775f17252bd62ffd98f41ffbabfdaf7e"
+      url "https://github.com/sandover/ergo/releases/download/v0.10.1/ergo_0.10.1_darwin_arm64.tar.gz"
+      sha256 "78fd1d3666f82976c6a312d278c7550f7ba0b411d4936920534581dc56037f85"
 
       def install
         bin.install "ergo"
@@ -29,15 +29,15 @@ class Ergo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandover/ergo/releases/download/v0.10.0/ergo_0.10.0_linux_amd64.tar.gz"
-      sha256 "1701dfffaad000b0f9706b011e02f37a1c79ca03462f227c177583f8b4ffe770"
+      url "https://github.com/sandover/ergo/releases/download/v0.10.1/ergo_0.10.1_linux_amd64.tar.gz"
+      sha256 "7363e799d7b75ba85b9cbee7a248962b2e033e06f96da7500c1707d876be8149"
       def install
         bin.install "ergo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandover/ergo/releases/download/v0.10.0/ergo_0.10.0_linux_arm64.tar.gz"
-      sha256 "7e4c66e1adc21b0f9386f4236183d0fcdf8a28c21bb565081a104686cec630dc"
+      url "https://github.com/sandover/ergo/releases/download/v0.10.1/ergo_0.10.1_linux_arm64.tar.gz"
+      sha256 "c36c91f35ff9e4b48f3028f332afd1d76e9a6cdf365acbe7e6d0a7e2bee303f6"
       def install
         bin.install "ergo"
       end
