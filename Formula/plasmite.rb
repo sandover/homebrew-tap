@@ -2,25 +2,25 @@ class Plasmite < Formula
   desc "Plasmite CLI"
   homepage "https://github.com/sandover/plasmite"
   license "MIT"
-  version "0.6.0"
+  version "0.6.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sandover/plasmite/releases/download/v0.6.0/plasmite_0.6.0_darwin_arm64.tar.gz"
-      sha256 "9528f1288fabc952f9b04c624bc1794321c1aa28eac1c61a60124ce46d4867b4"
+      url "https://github.com/sandover/plasmite/releases/download/v0.6.1/plasmite_0.6.1_darwin_arm64.tar.gz"
+      sha256 "5c1c79d50ec903fb9378e1f530e933be60bafcdd76bc688bfd4b108aee81a267"
     else
-      url "https://github.com/sandover/plasmite/releases/download/v0.6.0/plasmite_0.6.0_darwin_amd64.tar.gz"
-      sha256 "895afe194b463efdfc889f9da63bbc00607920e6efb1cd5fb20fc0a73cdcaba8"
+      url "https://github.com/sandover/plasmite/releases/download/v0.6.1/plasmite_0.6.1_darwin_amd64.tar.gz"
+      sha256 "61201207ef21f2ed8841139af914a9bbd5f4e97af93feedaf6c4a8f70adf907b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/sandover/plasmite/releases/download/v0.6.0/plasmite_0.6.0_linux_arm64.tar.gz"
-      sha256 "de8382e9dab6d75073d0b4c67d47db4a788a420f7cd4f8574481871b463fd589"
+      url "https://github.com/sandover/plasmite/releases/download/v0.6.1/plasmite_0.6.1_linux_arm64.tar.gz"
+      sha256 "022561d86ea0ab5499b8a6ff02c71684099f5c666aee0ef89c569ed852cc3637"
     else
-      url "https://github.com/sandover/plasmite/releases/download/v0.6.0/plasmite_0.6.0_linux_amd64.tar.gz"
-      sha256 "2d63591e4f08c0c25e23f669d38edbefd7f294dd8868ce0525fcbff8d8ab2f97"
+      url "https://github.com/sandover/plasmite/releases/download/v0.6.1/plasmite_0.6.1_linux_amd64.tar.gz"
+      sha256 "ce0a260b38f849437845bfe0d98797bfa283d39e97f8e25873c3e9fff6603c21"
     end
   end
 
