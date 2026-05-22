@@ -5,21 +5,21 @@
 class Ergo < Formula
   desc "Minimal multi-agent DAG task planner built on an append-only JSONL event log"
   homepage "https://github.com/sandover/ergo"
-  version "0.11.2"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sandover/ergo/releases/download/v0.11.2/ergo_0.11.2_darwin_amd64.tar.gz"
-      sha256 "3dbd714a609e453cb4c759ea108e5a840a6375218c48031d4234dfe569396674"
+      url "https://github.com/sandover/ergo/releases/download/v1.0.0/ergo_1.0.0_darwin_amd64.tar.gz"
+      sha256 "5ef555d68ddc48d04e8af7cc1b9a352a97a5cdd4d6a96442c519c21d7eb1ff6a"
 
       define_method(:install) do
         bin.install "ergo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sandover/ergo/releases/download/v0.11.2/ergo_0.11.2_darwin_arm64.tar.gz"
-      sha256 "794ec343ccd79eed15e7eaf8ebe4522d53d54bd329907bade798db3b5afebcd1"
+      url "https://github.com/sandover/ergo/releases/download/v1.0.0/ergo_1.0.0_darwin_arm64.tar.gz"
+      sha256 "79f1387e3dd83e471b94b716d40ef434c3b831a4a9e869cdcd3db81467e586cb"
 
       define_method(:install) do
         bin.install "ergo"
@@ -29,15 +29,15 @@ class Ergo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandover/ergo/releases/download/v0.11.2/ergo_0.11.2_linux_amd64.tar.gz"
-      sha256 "22245044c2cda52deedd646b14eb80ebc25bff4beec17371b9f78e125742a039"
+      url "https://github.com/sandover/ergo/releases/download/v1.0.0/ergo_1.0.0_linux_amd64.tar.gz"
+      sha256 "ab195305c4b9c69c29dc964893f12ab2b57302a5bf2452c274f0d0a2a4a2f66a"
       define_method(:install) do
         bin.install "ergo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandover/ergo/releases/download/v0.11.2/ergo_0.11.2_linux_arm64.tar.gz"
-      sha256 "c14143f3308777ebe51a1b8c627378d2c49cfc317dd7e5215f87274a212cd9ca"
+      url "https://github.com/sandover/ergo/releases/download/v1.0.0/ergo_1.0.0_linux_arm64.tar.gz"
+      sha256 "20df38d1ed7b8c0f0888739e82d221a82b239791e52ccf083a03a01ceec974e1"
       define_method(:install) do
         bin.install "ergo"
       end
