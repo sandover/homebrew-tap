@@ -15,12 +15,11 @@ class Plasmite < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm?
-      url "https://github.com/sandover/plasmite/releases/download/v0.6.1/plasmite_0.6.1_linux_arm64.tar.gz"
-      sha256 "022561d86ea0ab5499b8a6ff02c71684099f5c666aee0ef89c569ed852cc3637"
-    else
+    if Hardware::CPU.intel?
       url "https://github.com/sandover/plasmite/releases/download/v0.6.1/plasmite_0.6.1_linux_amd64.tar.gz"
       sha256 "ce0a260b38f849437845bfe0d98797bfa283d39e97f8e25873c3e9fff6603c21"
+    else
+      odie "Plasmite is supported on x86_64 Linux only"
     end
   end
 
