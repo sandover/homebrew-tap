@@ -1,5 +1,5 @@
 class Plasmite < Formula
-  desc "Plasmite CLI"
+  desc "Persistent JSON message queues with a CLI and native SDK"
   homepage "https://github.com/sandover/plasmite"
   license "MIT"
   version "0.6.1"
@@ -25,11 +25,14 @@ class Plasmite < Formula
   end
 
   def install
-    bin.install "plasmite"
-    bin.install "pls"
+    bin.install "bin/plasmite", "bin/pls"
+    include.install "include/plasmite.h"
+    lib.install "lib/libplasmite.dylib", "lib/libplasmite.a"
+    (lib/"pkgconfig").install "lib/pkgconfig/plasmite.pc"
   end
 
   test do
-    assert_match "plasmite", shell_output("#{bin}/plasmite")
+    system bin/"plasmite", "--version"
+    system bin/"pls", "--version"
   end
 end
