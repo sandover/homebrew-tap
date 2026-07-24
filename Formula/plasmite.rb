@@ -1,8 +1,8 @@
 class Plasmite < Formula
   desc "Persistent JSON message queues with a CLI and native SDK"
   homepage "https://github.com/sandover/plasmite"
-  license "MIT"
   version "0.6.1"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
