@@ -1,23 +1,23 @@
 class Plasmite < Formula
   desc "Persistent JSON message queues with a CLI and native SDK"
   homepage "https://github.com/sandover/plasmite"
-  version "0.7.1"
+  version "0.7.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sandover/plasmite/releases/download/v0.7.1/plasmite_0.7.1_darwin_arm64.tar.gz"
-      sha256 "1e0136cb33179d1bd35a0a1a8bdd3a34d8a2e5a65782da595a729be540079a22"
+      url "https://github.com/sandover/plasmite/releases/download/v0.7.2/plasmite_0.7.2_darwin_arm64.tar.gz"
+      sha256 "7985f7e6f5a4a70cbd3580405c3491e325fb070507e7dbfccc96adc53505affd"
     else
-      url "https://github.com/sandover/plasmite/releases/download/v0.7.1/plasmite_0.7.1_darwin_amd64.tar.gz"
-      sha256 "f5da99cf067f34914ec20b71411103febb6068044ddda198257b641dbf66827b"
+      url "https://github.com/sandover/plasmite/releases/download/v0.7.2/plasmite_0.7.2_darwin_amd64.tar.gz"
+      sha256 "135ed0a48aa92e037c7648a73bda3e1be82316bb70dae92a550b6b17bcddb999"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/sandover/plasmite/releases/download/v0.7.1/plasmite_0.7.1_linux_amd64.tar.gz"
-      sha256 "92fd962a39ee22b9e8ed07a89ef263b9a1e68916dad8450642fa62bb444bb3dc"
+      url "https://github.com/sandover/plasmite/releases/download/v0.7.2/plasmite_0.7.2_linux_amd64.tar.gz"
+      sha256 "d096bc585baee26c41e0f2c2c148d849432564a120fa2b633af5b31d6184e2f4"
     else
       odie "Plasmite is supported on x86_64 Linux only"
     end
